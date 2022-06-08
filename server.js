@@ -175,13 +175,13 @@ const presidents = {
         'facts' : 'Garfield (who was the first known left-handed President) was elected to the U.S. Senate, but he never served as Ohio senator because he then won the Republican nomination for president.',
         'image' : 'https://www.examsegg.com/wp-content/uploads/2017/06/james-garfield.jpg',
     },
-    'chester arthur ' : {
+    'chester arthur' : {
         'number' : 21,
         'term' : 'September 19, 1881 - March 4, 1885',
         'party' : 'Republican',
         'birthstate' : 'Vermont',
         'facts' : 'Arthur was named in honor of Chester Abell, the doctor who delivered him.',
-    'image' : 'https://www.examsegg.com/wp-content/uploads/2017/06/chester-arthur.jpg',
+        'image' : 'https://www.examsegg.com/wp-content/uploads/2017/06/chester-arthur.jpg',
     },
     'grover cleveland' : {
         'number' : 22,
@@ -295,7 +295,7 @@ const presidents = {
         'facts' : 'After being injured and honorably discharged in World War II, John F. Kennedy was briefly employed as a journalist during the waning weeks of the war.',
         'image' : 'https://www.examsegg.com/wp-content/uploads/2017/06/j-f-kennedy.jpg',
     },
-    'lyndon johnson ' : {
+    'lyndon johnson' : {
         'number' : 36,
         'term' : 'November 22, 1963 - January 20, 1969',
         'party' : 'Democratic',
@@ -327,7 +327,7 @@ const presidents = {
         'facts' : 'In 1953, Carter gave up his successful military career to move back to Georgia and work on the family peanut farm.',
         'image' : 'https://www.examsegg.com/wp-content/uploads/2017/06/jimmy-carter.jpg',
     },
-    'ronald reagan ' : {
+    'ronald reagan' : {
         'number' : 40,
         'term' : 'January 20, 1981 - January 20, 1989',
         'party' : 'Republican',
@@ -335,7 +335,7 @@ const presidents = {
         'facts' : 'Reagan worked as a lifeguard and sportscaster before becoming an actor and, later, a politician.',
         'image' : 'https://www.examsegg.com/wp-content/uploads/2017/06/ronald-reagan.png',
     },
-    'george hw bush ' : {
+    'george hw bush' : {
         'number' : 41,
         'term' : 'January 20, 1989 - January 20, 1993',
         'party' : 'Republican',
