@@ -383,7 +383,7 @@ const presidents = {
         'Facts' : 'Biden overcame a debilitating childhood stutter after enduring bullying over the condition in grade school.',
         'Image' : 'https://www.examsegg.com/wp-content/uploads/2017/06/joe-biden-new-president-of-america-scaled.jpg',
     },
-    'name' : {
+    'template' : {
         'Number' : 47,
         'Term' : 'July 9, 1850 - March 4, 1853',
         'Party' : '',
