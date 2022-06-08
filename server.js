@@ -398,8 +398,8 @@ app.get('/', (request, response) => {
     response.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api/:name', (request, response) => {
-    const presName = request.params.name.toLowerCase()
+app.get('/api/:pname', (request, response) => {
+    const presName = request.params.pname.toLowerCase()
         if (presidents[presName]){
             response.json(presidents[presName])
         }else{
