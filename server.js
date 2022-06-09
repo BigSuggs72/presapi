@@ -375,7 +375,7 @@ const presidents = {
         'facts' : 'Before becoming President, Trump was a real estate developer, entrepreneur and host of the NBC reality show, "The Apprentice."',
         'image' : 'https://www.examsegg.com/wp-content/uploads/2017/06/donald-trump.jpg',
     },
-    'joseph biden' : {
+    'joe biden' : {
         'number' : 46,
         'term' : 'January 20, 2021 - present',
         'party' : 'Democratic',
@@ -391,7 +391,6 @@ const presidents = {
         'facts' : 'none',
         'image' : '',
     },
-
 }
 
 app.get('/', (request, response) => {
