@@ -9,6 +9,8 @@ app.use(cors())
 const presidents = {
     'unknown' : {
         'number' : 'unknown',
+        'firstname' : 'unknown',
+        'lastname' : 'unknown',
         'term' : 'unknown',
         'party' : 'unknown',
         'birthstate' : 'unknown',
@@ -17,6 +19,8 @@ const presidents = {
     },
     'george washington' : {
         'number' : 1,
+        'firstname' : 'george',
+        'lastname' : 'washington',
         'term' : 'April 30, 1789 - March 4, 1797',
         'party' : 'Federalist',
         'birthstate' : 'Virginia',
@@ -25,6 +29,8 @@ const presidents = {
     },
     'john adams' : {
         'Mumber' : 2,
+        'firstname' : 'john',
+        'lastname' : 'adams',
         'term' : 'March 4, 1797 - March 4, 1801',
         'party' : 'Federalist',
         'birthstate' : 'Massachusetts',
@@ -33,6 +39,8 @@ const presidents = {
     },
     'thomas jefferson' : {
         'number' : 3,
+        'firstname' : 'thomas',
+        'lastname' : 'jefferson',
         'term' : 'March 4, 1801 - March 4, 1809',
         'party' : 'Democratic-Republican',
         'birthstate' : 'Virginia',
@@ -41,6 +49,8 @@ const presidents = {
     },
     'james madison' : {
         'number' : 4,
+        'firstname' : 'james',
+        'lastname' : 'madison',
         'term' : 'March 4, 1809 - March 4, 1817',
         'party' : 'Democratic-Republican',
         'birthstate' : 'Virginia',
@@ -49,6 +59,8 @@ const presidents = {
     },
     'james monroe' : {
         'number' : 5,
+        'firstname' : 'james',
+        'lastname' : 'monroe',
         'term' : 'March 4, 1817 - March 4, 1825',
         'party' : 'Democratic-Republican',
         'birthstate' : 'Virginia',
@@ -57,6 +69,8 @@ const presidents = {
     },
     'john quincy adams' : {
         'number' : 6,
+        'firstname' : 'john quincy',
+        'lastname' : 'adams',
         'term' : 'March 4, 1825 - March 4, 1829',
         'party' : 'Democratic-Republican/National Republican',
         'birthstate' : 'Massachusetts',
@@ -65,6 +79,8 @@ const presidents = {
     },
     'andrew jackson' : {
         'number' : 7,
+        'firstname' : 'andrew',
+        'lastname' : 'jackson',
         'term' : 'March 4, 1829 - March 4, 1837',
         'party' : 'Democratic',
         'birthstate' : 'South Carolina',
@@ -73,6 +89,8 @@ const presidents = {
     },
     'martin van buren' : {
         'number' : 8,
+        'firstname' : 'martin',
+        'lastname' : 'van buren',
         'term' : 'March 4, 1837 - March 4, 1841',
         'party' : 'Whig',
         'birthstate' : 'New York',
@@ -81,6 +99,8 @@ const presidents = {
     },
     'william harrison' : {
         'number' : 9,
+        'firstname' : 'william',
+        'lastname' : 'harrison',
         'term' : 'March 4, 1841 - April 4, 1841',
         'party' : 'Whig',
         'birthstate' : 'South Carolina',
@@ -89,6 +109,8 @@ const presidents = {
     },
     'john tyler' : {
         'number' : 10,
+        'firstname' : 'john',
+        'lastname' : 'tyler',
         'term' : 'April 4, 1841 - March 4, 1845',
         'party' : 'Democratic',
         'birthstate' : 'Virginia',
@@ -97,6 +119,8 @@ const presidents = {
     },
     'james polk' : {
         'number' : 11,
+        'firstname' : 'james',
+        'lastname' : 'polk',
         'term' : 'March 4, 1845 - March 4, 1849',
         'party' : 'Democratic',
         'birthstate' : 'North Carolina',
@@ -105,6 +129,8 @@ const presidents = {
     },
     'zachary taylor' : {
         'number' : 12,
+        'firstname' : 'zachary',
+        'lastname' : 'taylor',
         'term' : 'March 4, 1849 - July 9, 1850',
         'party' : 'Whig',
         'birthstate' : 'Virgina',
@@ -113,6 +139,8 @@ const presidents = {
     },
     'millard fillmore' : {
         'number' : 13,
+        'firstname' : 'millard',
+        'lastname' : 'fillmore',
         'term' : 'July 9, 1850 - March 4, 1853',
         'party' : 'Democratic',
         'birthstate' : 'New York',
@@ -121,6 +149,8 @@ const presidents = {
     },
     'franklin pierce' : {
         'number' : 14,
+        'firstname' : 'franklin',
+        'lastname' : 'pierce',
         'term' : 'March 4, 1853 - March 4, 1857',
         'party' : 'Democratic',
         'birthstate' : 'New Hampshire',
@@ -129,6 +159,8 @@ const presidents = {
     },
     'james buchanan ' : {
         'number' : 15,
+        'firstname' : 'james',
+        'lastname' : 'buchanan',
         'term' : 'March 4, 1857 - March 4, 1861',
         'party' : 'Democratic',
         'birthstate' : 'Pennsylvania',
@@ -137,6 +169,8 @@ const presidents = {
     },
     'abraham lincoln' : {
         'number' : 16,
+        'firstname' : 'abraham',
+        'lastname' : 'lincoln',
         'term' : 'July 9, 1850 - March 4, 1853',
         'party' : 'Republican',
         'birthstate' : 'Kentucky',
@@ -145,6 +179,8 @@ const presidents = {
     },
     'andrew johnson ' : {
         'number' : 17,
+        'firstname' : 'andrew',
+        'lastname' : 'johnson',
         'term' : 'April 15, 1865 - March 4, 1869',
         'party' : 'Democratic',
         'birthstate' : 'North Carolina',
@@ -153,6 +189,8 @@ const presidents = {
     },
     'ulysses grant' : {
         'number' : 18,
+        'firstname' : 'ulysses',
+        'lastname' : 'grant',
         'term' : 'March 4, 1869 - March 4, 1877',
         'party' : 'Republican',
         'birthstate' : 'Ohio',
@@ -161,6 +199,8 @@ const presidents = {
     },
     'rutherford hayes' : {
         'number' : 19,
+        'firstname' : 'rutherford',
+        'lastname' : 'hayes',
         'term' : 'March 4, 1877 - March 4, 1881',
         'party' : 'Republican',
         'birthstate' : 'Ohio',
@@ -169,6 +209,8 @@ const presidents = {
     },
     'james garfield' : {
         'number' : 20,
+        'firstname' : 'james',
+        'lastname' : 'garfield',
         'term' : 'March 4, 1881 - September 19, 1881',
         'party' : 'Republican',
         'birthstate' : 'Ohio',
@@ -177,6 +219,8 @@ const presidents = {
     },
     'chester arthur' : {
         'number' : 21,
+        'firstname' : 'chester',
+        'lastname' : 'arthur',
         'term' : 'September 19, 1881 - March 4, 1885',
         'party' : 'Republican',
         'birthstate' : 'Vermont',
@@ -185,6 +229,8 @@ const presidents = {
     },
     'grover cleveland' : {
         'number' : 22,
+        'firstname' : 'grover',
+        'lastname' : 'cleveland',
         'term' : 'March 4, 1885 - March 4, 1889',
         'party' : 'Democratic',
         'birthstate' : 'New Jersey',
@@ -193,6 +239,8 @@ const presidents = {
     },
     'benjamin harrison' : {
         'number' : 23,
+        'firstname' : 'benjamin',
+        'lastname' : 'harrison',
         'term' : 'March 4, 1889 - March 4, 1893',
         'party' : 'Republican',
         'birthstate' : 'Ohio',
@@ -201,6 +249,8 @@ const presidents = {
     },
     'grover cleveland' : {
         'number' : 24,
+        'firstname' : 'grover',
+        'lastname' : 'cleveland',
         'term' : 'March 4, 1893 - March 4, 1897',
         'party' : 'Democratic',
         'birthstate' : 'New Jersey',
@@ -209,6 +259,8 @@ const presidents = {
     },
     'william mcKinley' : {
         'number' : 25,
+        'firstname' : 'william',
+        'lastname' : 'mcKinley',
         'term' : 'March 4, 1897 - September 14, 1901',
         'party' : 'Republican',
         'birthstate' : 'Ohio',
@@ -217,6 +269,8 @@ const presidents = {
     },
     'theodore roosevelt' : {
         'number' : 26,
+        'firstname' : 'theodore',
+        'lastname' : 'roosevelt',
         'term' : 'July 9, 1850 - March 4, 1853',
         'party' : 'Republican',
         'birthstate' : 'New York',
@@ -225,6 +279,8 @@ const presidents = {
     },
     'william taft' : {
         'number' : 27,
+        'firstname' : 'william',
+        'lastname' : 'taft',
         'term' : 'March 4, 1909 - March 4, 1913',
         'party' : 'Republican',
         'birthstate' : 'Ohio',
@@ -233,6 +289,8 @@ const presidents = {
     },
     'woodrow wilson' : {
         'number' : 28,
+        'firstname' : 'woodrow',
+        'lastname' : 'wilson',
         'term' : 'March 4, 1913 - March 4, 1921',
         'party' : 'Democratic',
         'birthstate' : 'Virginia',
@@ -241,6 +299,8 @@ const presidents = {
     },
     'warren harding' : {
         'number' : 29,
+        'firstname' : 'warren',
+        'lastname' : 'harding',
         'term' : 'March 4, 1921 - August 2, 1923',
         'party' : 'Republican',
         'birthstate' : 'Ohio',
@@ -249,6 +309,8 @@ const presidents = {
     },
     'calvin coolidge' : {
         'number' : 30,
+        'firstname' : 'calvin',
+        'lastname' : 'coolidge',
         'term' : 'August 2, 1923 - March 4, 1929',
         'party' : 'Republican',
         'birthstate' : 'Vermont',
@@ -257,14 +319,18 @@ const presidents = {
     },
     'herbert hoover' : {
         'number' : 31,
+        'firstname' : 'herbert',
+        'lastname' : 'hoover',
         'term' : 'March 4, 1929 - March 4, 1933',
         'party' : 'Republican',
         'birthstate' : 'Iowa',
         'facts' : 'Hoover was the first president to hail from west of the Mississippi River.',
         'image' : 'https://www.examsegg.com/wp-content/uploads/2017/06/herbert-clark-hoover.jpeg',
     },
-    'franklin roosevelt' : {
+    'franklin d roosevelt' : {
         'number' : 32,
+        'firstname' : 'franklin d',
+        'lastname' : 'roosevelt',
         'term' : 'July 9, 1850 - March 4, 1853',
         'party' : 'Democratic',
         'birthstate' : 'New York',
@@ -273,6 +339,8 @@ const presidents = {
     },
     'harry truman' : {
         'number' : 33,
+        'firstname' : 'harry',
+        'lastname' : 'truman',
         'term' : 'April 12, 1945 - January 20, 1953',
         'party' : 'Democratic',
         'birthstate' : 'Missouri',
@@ -281,6 +349,8 @@ const presidents = {
     },
     'dwight eisenhower' : {
         'number' : 34,
+        'firstname' : 'dwight',
+        'lastname' : 'eisenhower',
         'term' : 'January 20, 1953 - January 20, 1961',
         'party' : 'Republican',
         'birthstate' : 'Texas',
@@ -289,6 +359,8 @@ const presidents = {
     },
     'john kennedy' : {
         'number' : 35,
+        'firstname' : 'john',
+        'lastname' : 'kennedy',
         'term' : 'January 20, 1961 - November 22, 1963',
         'party' : 'Democratic',
         'birthstate' : 'Massachusetts',
@@ -297,6 +369,8 @@ const presidents = {
     },
     'lyndon johnson' : {
         'number' : 36,
+        'firstname' : 'lyndon',
+        'lastname' : 'johnson',
         'term' : 'November 22, 1963 - January 20, 1969',
         'party' : 'Democratic',
         'birthstate' : 'Texas',
@@ -305,6 +379,8 @@ const presidents = {
     },
     'richard nixon' : {
         'number' : 37,
+        'firstname' : 'richard',
+        'lastname' : 'nixon',
         'term' : 'January 20, 1969 - August 9, 1974',
         'party' : 'Republican',
         'birthstate' : 'California',
@@ -313,6 +389,8 @@ const presidents = {
     },
     'gerald ford' : {
         'number' : 38,
+        'firstname' : 'gerald',
+        'lastname' : 'ford',
         'term' : 'August 9, 1974 - January 20, 1977',
         'party' : 'Republican',
         'birthstate' : 'Nebraska',
@@ -321,6 +399,8 @@ const presidents = {
     },
     'jimmy carter' : {
         'number' : 39,
+        'firstname' : 'jimmy',
+        'lastname' : 'carter',
         'term' : 'January 20, 1977 - January 20, 1981',
         'party' : 'Democratic',
         'birthstate' : 'Georgia',
@@ -329,6 +409,8 @@ const presidents = {
     },
     'ronald reagan' : {
         'number' : 40,
+        'firstname' : 'ronald',
+        'lastname' : 'reagan',
         'term' : 'January 20, 1981 - January 20, 1989',
         'party' : 'Republican',
         'birthstate' : 'Illinois',
@@ -337,6 +419,8 @@ const presidents = {
     },
     'george hw bush' : {
         'number' : 41,
+        'firstname' : 'george hw',
+        'lastname' : 'bush',
         'term' : 'January 20, 1989 - January 20, 1993',
         'party' : 'Republican',
         'birthstate' : 'Massachusetts',
@@ -345,6 +429,8 @@ const presidents = {
     },
     'bill clinton' : {
         'number' : 42,
+        'firstname' : 'bill',
+        'lastname' : 'clinton',
         'term' : 'January 20, 1993 - January 20, 2001',
         'party' : 'Democratic',
         'birthstate' : 'Arkansas',
@@ -353,6 +439,8 @@ const presidents = {
     },
     'george w bush' : {
         'number' : 43,
+        'firstname' : 'george w',
+        'lastname' : 'bush',
         'term' : 'January 20, 2001 - January 20, 2009',
         'party' : 'Republican',
         'birthstate' : 'Connecticut',
@@ -361,6 +449,8 @@ const presidents = {
     },
     'barack obama' : {
         'number' : 44,
+        'firstname' : 'barack',
+        'lastname' : 'obama',
         'term' : 'January 20, 2009 - January 20, 2017',
         'party' : 'Democratic',
         'birthstate' : 'Hawaii',
@@ -369,6 +459,8 @@ const presidents = {
     },
     'donald trump' : {
         'number' : 45,
+        'firstname' : 'donald',
+        'lastname' : 'trump',
         'term' : 'January 20, 2017 - January 20, 2021',
         'party' : 'Republican',
         'birthstate' : 'New York',
@@ -377,6 +469,8 @@ const presidents = {
     },
     'joe biden' : {
         'number' : 46,
+        'firstname' : 'joe',
+        'lastname' : 'biden',
         'term' : 'January 20, 2021 - present',
         'party' : 'Democratic',
         'birthstate' : 'Pennsylvania',
@@ -393,18 +487,21 @@ const presidents = {
     },
 }
 
+
 app.get('/', (request, response) => {
     response.sendFile(__dirname + '/index.html')
 })
 
 app.get('/api/:pname', (request, response) => {
-    const presName = request.params.pname.toLowerCase()
+    console.log(presidents[44])
+        const presName = request.params.pname.toLowerCase()
         if (presidents[presName]){
             response.json(presidents[presName])
         }else{
             response.json(presidents['unknown'])
         }
-})
+    })
+    
 
 app.listen(process.env.PORT || PORT, () => {
     console.log(`The presAPI server is working like a charm on port ${PORT}!!!`)
