@@ -5,8 +5,16 @@ const cors = require('cors')
 const PORT = 8000
 require('dotenv').config()
 
-app.use(cors())
 
+//SET MIDDLEWARE
+app.set('view engine', 'ejs')
+app.use(cors())
+// app.use(express.static('public'))
+app.use(express.urlencoded({extended: true}))
+app.use(express.json())
+
+
+//Objects
 const presidents = {
     'unknown' : {
         'number' : 'unknown',
