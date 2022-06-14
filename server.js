@@ -477,14 +477,6 @@ const presidents = {
         'facts' : 'Biden overcame a debilitating childhood stutter after enduring bullying over the condition in grade school.',
         'image' : 'https://www.examsegg.com/wp-content/uploads/2017/06/joe-biden-new-president-of-america-scaled.jpg',
     },
-    'template' : {
-        'number' : 47,
-        'term' : '',
-        'party' : '',
-        'birthstate' : '',
-        'facts' : 'none',
-        'image' : '',
-    },
 }
 
 
@@ -493,7 +485,7 @@ app.get('/', (request, response) => {
 })
 
 app.get('/api/:pname', (request, response) => {
-    console.log(presidents[44])
+    console.log(presidents)
         const presName = request.params.pname.toLowerCase()
         if (presidents[presName]){
             response.json(presidents[presName])
