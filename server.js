@@ -495,19 +495,17 @@ app.get('/', (request, response) => {
 
 app.get('/api/:pname', (request, response) => {
         const presName = request.params.pname.toLowerCase()
-        const val = Object.values(presidents)
-
-        for (const value of val){
-            console.log(val)
-            if (value.firstname.toLowerCase() === presName || value.lastname.toLowerCase() === presName){
+      
+        for (const value of Object.values(presidents)){
+            console.log(value)
+            if (value.firstname.toLowerCase() === presName || value.lastname.toLowerCase() === presName || value.number.toLowerCase() === presName){
                 return response.json(value)  // This is the same as calling rappers[key] in the example above
             }else{
                 return response.json(presidents['unknown'])
             }
         }
     })
-            
-            
+                        
         // if (presidents[presName]){
         //     response.json(presidents[presName])
         // }else{
