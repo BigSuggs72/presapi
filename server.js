@@ -498,7 +498,7 @@ app.get('/api/:pname', (request, response) => {
       
         for (const value of Object.values(presidents)){
             console.log(value)
-            if (value.firstname.toLowerCase() === presName || value.lastname.toLowerCase() === presName || value.number.toLowerCase() === presName){
+            if (value['firstname'].toLowerCase() === presName){
                 return response.json(value)  // This is the same as calling rappers[key] in the example above
             }else{
                 return response.json(presidents['unknown'])
@@ -506,11 +506,14 @@ app.get('/api/:pname', (request, response) => {
         }
     })
                         
-        // if (presidents[presName]){
-        //     response.json(presidents[presName])
-        // }else{
-        //     response.json(presidents['unknown'])
-        // }
+    // (value.firsttname.toLowerCase() === presName || value.lastname.toLowerCase() === presName || value.number.toLowerCase() === presName)
+
+    //     if (presidents[presName]){
+    //         response.json(presidents[presName])
+    //     }else{
+    //         response.json(presidents['unknown'])
+    //     }
+    // })
         
 app.listen(process.env.PORT || PORT, () => {
     console.log(`The presAPI server is working like a charm on port ${PORT}!!!`)
