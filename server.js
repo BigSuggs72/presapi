@@ -16,16 +16,16 @@ app.use(express.json())
 
 //Objects
 const presidents = {
-    'unknown' : {
-        'number' : 'unknown',
-        'firstname' : 'unknown',
-        'lastname' : 'unknown',
-        'term' : 'unknown',
-        'party' : 'unknown',
-        'birthstate' : 'unknown',
-        'facts' : 'unknown',
-        'image' : 'unknown',
-    },
+    // 'unknown' : {
+    //     'number' : 'unknown',
+    //     'firstname' : 'unknown',
+    //     'lastname' : 'unknown',
+    //     'term' : 'unknown',
+    //     'party' : 'unknown',
+    //     'birthstate' : 'unknown',
+    //     'facts' : 'unknown',
+    //     'image' : 'unknown',
+    // },
     'george washington' : {
         'number' : 1,
         'firstname' : 'George',
@@ -37,7 +37,7 @@ const presidents = {
         'image' : 'https://www.examsegg.com/wp-content/uploads/2017/06/george-washington.jpg',
     },
     'john adams' : {
-        'Mumber' : 2,
+        'number' : 2,
         'firstname' : 'John',
         'lastname' : 'Adams',
         'term' : 'March 4, 1797 - March 4, 1801',
@@ -495,17 +495,26 @@ app.get('/', (request, response) => {
 
 app.get('/api/:pname', (request, response) => {
         const presName = request.params.pname.toLowerCase()
+        const val = Object.values(presidents)
+        fName = val.firstname
+        lName = val.lastname
+        num = val.number
       
-        for (const value of Object.values(presidents)){
-            console.log(value)
-            if (value['firstname'].toLowerCase() === presName){
-                return response.json(value)  // This is the same as calling rappers[key] in the example above
+        for (let val of Object.values(presidents)){
+            console.log(val.number)
+            if (fName === presName) {
+                response.json(val.firstname)
+            }else if (lName === presName){
+                response.json(val.lastname)
+            }else if (num === presName){
+                response.json(val.number)
             }else{
-                return response.json(presidents['unknown'])
+                response.json(presidents['unknown'])
             }
         }
     })
-                        
+                     
+    // (let value of Object.values(presidents)
     // (value.firsttname.toLowerCase() === presName || value.lastname.toLowerCase() === presName || value.number.toLowerCase() === presName)
 
     //     if (presidents[presName]){
