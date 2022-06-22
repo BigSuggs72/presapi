@@ -16,16 +16,16 @@ app.use(express.json())
 
 //Objects
 const presidents = {
-    // 'unknown' : {
-    //     'number' : 'unknown',
-    //     'firstname' : 'unknown',
-    //     'lastname' : 'unknown',
-    //     'term' : 'unknown',
-    //     'party' : 'unknown',
-    //     'birthstate' : 'unknown',
-    //     'facts' : 'unknown',
-    //     'image' : 'unknown',
-    // },
+    'unknown' : {
+        'number' : 'unknown',
+        'firstname' : 'unknown',
+        'lastname' : 'unknown',
+        'term' : 'unknown',
+        'party' : 'unknown',
+        'birthstate' : 'unknown',
+        'facts' : 'unknown',
+        'image' : 'unknown',
+    },
     'george washington' : {
         'number' : 1,
         'firstname' : 'George',
@@ -496,34 +496,21 @@ app.get('/', (request, response) => {
 app.get('/api/:pname', (request, response) => {
         const presName = request.params.pname.toLowerCase()
         const val = Object.values(presidents)
-        fName = val.firstname
-        lName = val.lastname
-        num = val.number
-      
-        for (let val of Object.values(presidents)){
-            console.log(val.number)
-            if (fName === presName) {
-                response.json(val.firstname)
-            }else if (lName === presName){
-                response.json(val.lastname)
-            }else if (num === presName){
-                response.json(val.number)
+        let result = ''
+
+        for (const value of val){
+            // console.log(values)
+            if (value.firstname.toLowerCase() === presName || value.lastname.toLowerCase() === presName || value.number === Number(presName)){
+                result = value
+                break;
             }else{
-                response.json(presidents['unknown'])
+                result = presidents['unknown']
             }
         }
+        return response.json(result)
     })
                      
-    // (let value of Object.values(presidents)
-    // (value.firsttname.toLowerCase() === presName || value.lastname.toLowerCase() === presName || value.number.toLowerCase() === presName)
-
-    //     if (presidents[presName]){
-    //         response.json(presidents[presName])
-    //     }else{
-    //         response.json(presidents['unknown'])
-    //     }
-    // })
-        
+    
 app.listen(process.env.PORT || PORT, () => {
     console.log(`The presAPI server is working like a charm on port ${PORT}!!!`)
 })
