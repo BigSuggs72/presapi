@@ -238,7 +238,7 @@ const presidents = {
     },
     'grover cleveland' : {
         'number' : 22,
-        'firstname' : 'Grover',
+        'firstname' : 'S Grover',
         'lastname' : 'Cleveland',
         'term' : 'March 4, 1885 - March 4, 1889',
         'party' : 'Democratic',
