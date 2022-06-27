@@ -2,8 +2,24 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const PORT = 8000
+const MongoClient = require('mongodb').MongoClient
 require('dotenv').config()
+
+
+//DECLARED DB VARIABLES(Hide credentials)
+let db,
+    dbConnectionStr = process.env.DB_STRING,
+    dbName = 'presapi',
+    collection
+
+
+// CONNECT TO MONGO DB
+MongoClient.connect(dbConnectionStr)
+    .then(client => {
+        console.log(`Connected to the ${dbName} database!`)
+        db = client.db(dbName)
+        collection = db.collection('presinfo')
+    })
 
 
 //SET MIDDLEWARE
@@ -512,5 +528,5 @@ app.get('/api/:pname', (request, response) => {
                      
     
 app.listen(process.env.PORT || PORT, () => {
-    console.log(`The presAPI server is working like a charm on port ${PORT}!!!`)
+    console.log(`The server is active!!!`)
 })
