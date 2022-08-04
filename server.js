@@ -1,7 +1,7 @@
 //API assignment from June 2, 2022 Class 39
 const express = require('express')
 const app = express()
-const cors = require('cors')
+// const cors = require('cors')
 const MongoClient = require('mongodb').MongoClient
 require('dotenv').config()
 
@@ -24,7 +24,7 @@ MongoClient.connect(dbConnectionStr)
 
 //SET MIDDLEWARE
 app.set('view engine', 'ejs')
-app.use(cors())
+// app.use(cors())
 // app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
