@@ -252,14 +252,14 @@ const presidents = {
         'facts' : 'Arthur was named in honor of Chester Abell, the doctor who delivered him.',
         'image' : 'https://www.examsegg.com/wp-content/uploads/2017/06/chester-arthur.jpg',
     },
-    'grover cleveland' : {
+    's grover cleveland' : {
         'number' : 22,
         'firstname' : 'S Grover',
         'lastname' : 'Cleveland',
         'term' : 'March 4, 1885 - March 4, 1889',
         'party' : 'Democratic',
         'birthstate' : 'New Jersey',
-        'facts' : 'The only President to has ever served non-consecutive terms',
+        'facts' : 'The only President to has ever served non-consecutive terms.  He also served as the 24th President',
         'image' : 'https://www.examsegg.com/wp-content/uploads/2017/06/grover-cleveland.jpg',
     },
     'benjamin harrison' : {
@@ -404,7 +404,7 @@ const presidents = {
     },
     'richard nixon' : {
         'number' : 37,
-        'firstname' : 'Richard M',
+        'firstname' : 'Richard',
         'lastname' : 'Nixon',
         'term' : 'January 20, 1969 - August 9, 1974',
         'party' : 'Republican',
@@ -519,6 +519,10 @@ app.get('/api/:pname', (request, response) => {
             if (value.firstname.toLowerCase() === presName || value.lastname.toLowerCase() === presName || value.number === Number(presName)){
                 result = value
                 break;
+            }else if(value.firstname.toLowerCase() === presName && value.lastname.toLowerCase() === presName){
+                result = value
+                break;
+
             }else{
                 result = presidents['unknown']
             }
