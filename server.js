@@ -515,7 +515,6 @@ app.get('/api/:pname', (request, response) => {
         let result = ''
 
         for (const value of val){
-            // console.log(values)
             if (value.firstname.toLowerCase() === presName || value.lastname.toLowerCase() === presName || value.number === Number(presName)){
                 result = value
                 break;
