@@ -24,12 +24,16 @@ MongoClient.connect(dbConnectionStr)
 
 //SET MIDDLEWARE
 app.set('view engine', 'ejs')
-app.use(cors({
-    origin: 'https://uspres.netlify.app'
-}));
-// app.use(express.static('public'))
+app.use(cors())
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
+app.use(function (req, res, next) {
+    // Website you wish to allow to connect
+    res.setHeader('Access-Control-Allow-Origin', 'https://uspres.netlify.app/');
+});
+
+
+
 
 
 //Objects
