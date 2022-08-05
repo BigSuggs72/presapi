@@ -25,7 +25,7 @@ MongoClient.connect(dbConnectionStr)
 //SET MIDDLEWARE
 app.set('view engine', 'ejs')
 app.use(cors({
-    origin: '*'
+    origin: 'Access-Control-Allow-Origin: *'
 }))
 // app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
