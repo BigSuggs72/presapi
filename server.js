@@ -1,7 +1,7 @@
 //API assignment from June 2, 2022 Class 39
 const express = require('express')
 const app = express()
-const cors = require('cors')
+// const cors = require('cors')
 const MongoClient = require('mongodb').MongoClient
 require('dotenv').config()
 
@@ -24,17 +24,9 @@ MongoClient.connect(dbConnectionStr)
 
 //SET MIDDLEWARE
 app.set('view engine', 'ejs')
-app.use(cors())
+// app.use(cors())
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
-app.use(function (req, res, next) {
-    // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    next();
-});
-
-
-
 
 
 //Objects
