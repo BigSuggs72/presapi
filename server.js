@@ -28,10 +28,12 @@ app.use(cors())
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use((request, response, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
+    response.header('Access-Control-Allow-Origin', '*');
     next();
   });
 
+
+  
 //Objects
 const presidents = {
     'unknown' : {
