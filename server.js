@@ -33,7 +33,7 @@ app.use((request, response, next) => {
   });
 
 
-  
+
 //Objects
 const presidents = {
     'unknown' : {
