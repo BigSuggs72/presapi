@@ -25,7 +25,7 @@ MongoClient.connect(dbConnectionStr)
 //SET MIDDLEWARE
 app.set('view engine', 'ejs')
 app.use(cors({
-    origin: 'https://app.netlify.com/drop'
+    origin: 'https://uspres.netlify.app'
 }))
 // app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
