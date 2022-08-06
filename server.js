@@ -529,7 +529,6 @@ app.get('/api/:pname', (request, response) => {
         return response.json(result)
     })
                      
-    
 app.listen(process.env.PORT || PORT, () => {
     console.log(`The server is active!!!`)
 })
