@@ -27,10 +27,6 @@ app.set('view engine', 'ejs')
 app.use(cors())
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
-app.use((request, response, next) => {
-    response.header('Access-Control-Allow-Origin', '*');
-    next();
-  });
 
 
 
