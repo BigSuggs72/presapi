@@ -520,8 +520,7 @@ app.get('/api/:pname', (request, response) => {
             if (presidents[presName]) {
                 result = presidents[presName]
                 break;
-            }
-            if (value.firstname.toLowerCase() === presName || value.lastname.toLowerCase() === presName || value.number === Number(presName)){
+            } else if (value.firstname.toLowerCase() === presName || value.lastname.toLowerCase() === presName || value.number === Number(presName)){
                 result = value
                 break;
             }else{
